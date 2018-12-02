@@ -28,6 +28,9 @@
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- MailChimp CSS -->
+    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -202,7 +205,7 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//aside-->
-
+                
                 <aside class="skills aside section">
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
@@ -257,6 +260,32 @@
                         <!--//content-->
                     </div>
                     <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Fique atualizado</h2>
+                        <div class="content">
+                            <span>Receba todo conteúdo que eu produzir diretamente no seu e-mail.</span>
+
+                            <div id="mc_embed_signup">
+                                <form action="https://joaorobertopb.us11.list-manage.com/subscribe/post?u=c980f1f781959ba600ddda1a5&amp;id=a245eb099a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group">
+                                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Insira seu melhor e-mail">
+                                        </div>
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display:none"></div>
+                                            <div class="response" id="mce-success-response" style="display:none"></div>
+                                        </div>    
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c980f1f781959ba600ddda1a5_a245eb099a" tabindex="-1" value=""></div>
+                                        <div class="clear"><input type="submit" value="Cadastrar e-mail" name="subscribe" id="mc-embedded-subscribe" class="btn btn-cta-primary"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </aside>
                 <!--//section-->
 
@@ -351,6 +380,37 @@
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+    (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+
+        $.extend($.validator.messages, {
+            required: "Campo de preenchimento obrigat&oacute;rio.",
+            remote: "Por favor, corrija este campo.",
+            email: "Por favor, insira um endere&ccedil;o de e-mail v&aacute;lido.",
+            url: "Por favor, insira um URL v&aacute;lido.",
+            date: "Por favor, insira uma data v&aacute;lida.",
+            dateISO: "Por favor, insira uma data v&aacute;lida (ISO).",
+            number: "Por favor, insira um n&uacute;mero v&aacute;lido.",
+            digits: "Por favor, insira apenas d&iacute;gitos.",
+            creditcard: "Por favor, insira um n&uacute;mero de cart&atilde;o de cr&eacute;dito v&aacute;lido.",
+            equalTo: "Por favor, insira de novo o mesmo valor.",
+            accept: "Por favor, insira um ficheiro com uma extens&atilde;o v&aacute;lida.",
+            maxlength: $.validator.format("Por favor, n&atilde;o insira mais do que {0} caracteres."),
+            minlength: $.validator.format("Por favor, insira pelo menos {0} caracteres."),
+            rangelength: $.validator.format("Por favor, insira entre {0} e {1} caracteres."),
+            range: $.validator.format("Por favor, insira um valor entre {0} e {1}."),
+            max: $.validator.format("Por favor, insira um valor menor ou igual a {0}."),
+            min: $.validator.format("Por favor, insira um valor maior ou igual a {0}.")
+        });}(jQuery));
+        
+        var $mcj = jQuery.noConflict(true);
+    </script>
 </body>
 
 </html>
